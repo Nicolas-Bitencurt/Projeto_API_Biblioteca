@@ -62,8 +62,8 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authz ->
                         authz
-                                // CORREÇÃO DO 403: Libera a rota /auth/** para login
-                                .requestMatchers("/auth/**").permitAll()
+                                // CORREÇÃO DO 403: Libera a rota /api/auth/** para login
+                                .requestMatchers("/api/auth/**").permitAll()
 
                                 // Libera rotas do Swagger (Documentação)
                                 .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
